@@ -26,13 +26,13 @@ parental_contact_details$pupils_name <- str_c(parental_contact_details$`pupil la
                                                   parental_contact_details$`pupil first name`) # 
 
 # 2. Do the same as step 1 but this time for the parental contact
-parental_contact_details$parental_contact_full_name <- str_c(parental_contact_details$`Parental Contact Name_1`, ", ", 
-                                                  parental_contact_details$`Parental Contact Name_2`) 
+parental_contact_details$parental_contact_full_name <- str_c(parental_contact_details$`pupil last name`, ", ", 
+                                                  parental_contact_details$`Parental Contact Name_1`) 
 
 # 3. Create the email address to contact the parent using the format Parent First Name.Parent Last Name@Employer.com
 # This is pretty much the same approach at the previous two steps - concantenation of existing columns into a new column
 
-parental_contact_details$parental_contact_email <- str_c(parental_contact_details$`Parental Contact Name_2`, ".", 
+parental_contact_details$parental_contact_email <- str_c(parental_contact_details$`pupil last name`, ".", 
                                       parental_contact_details$`Parental Contact Name_1`,"@",
                                       parental_contact_details$`Preferred Contact Employer`,".com")
 
