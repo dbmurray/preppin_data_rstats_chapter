@@ -25,16 +25,24 @@ parental_contact_details <- read_csv("2022/2022.Wk1 Parental Contact Details/dat
 parental_contact_details$pupils_name <- str_c(parental_contact_details$`pupil last name`, ", ", 
                                                   parental_contact_details$`pupil first name`) # 
 
-# 2. Do the same as step 1 but this time for the parental contact
+# 2. Do the same as step 1 but this time for the parental contact. However, we have to select the correct parent
+# using the Parental Contact variable first
+
+parental_contact_details <- mutate(parental_contact_details, 
+                                   correct_parental_contact = ifelse(`Parental Contact` == 1, 
+                                                                     `Parental Contact Name_1`, 
+                                                                     `Parental Contact Name_2`))
+
+# now that we have the correct parental contact, we use this to create the full name
 parental_contact_details$parental_contact_full_name <- str_c(parental_contact_details$`pupil last name`, ", ", 
-                                                  parental_contact_details$`Parental Contact Name_1`) 
+                                                  parental_contact_details$correct_parental_contact) 
 
 # 3. Create the email address to contact the parent using the format Parent First Name.Parent Last Name@Employer.com
 # This is pretty much the same approach at the previous two steps - concantenation of existing columns into a new column
 
-parental_contact_details$parental_contact_email <- str_c(parental_contact_details$`pupil last name`, ".", 
-                                      parental_contact_details$`Parental Contact Name_1`,"@",
-                                      parental_contact_details$`Preferred Contact Employer`,".com")
+parental_contact_details$parental_contact_email <- str_c(parental_contact_details$correct_parental_contact, ".",
+                                                        parental_contact_details$`pupil last name`,"@",
+                                                        parental_contact_details$`Preferred Contact Employer`,".com")
 
 # 4. Create the academic year the pupils are in (help)
 # Each academic year starts on 1st September.
