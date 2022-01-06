@@ -1,12 +1,13 @@
 Repo for Preppin' Data solutions coded in R (January 2022 onwards) by Darragh Murray.
 
-https://www.preppindata.com
-
 Preppin' Data is a project run by:
 <ul><li>Jenny Martin</li>
 <li>Tom Prowse</li>
   <li>Carl Allchin</li>
 </ul>
+
+https://www.preppindata.com
+
 
 <h3>January 2022</h3>
 <ul>
