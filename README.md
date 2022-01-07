@@ -12,7 +12,6 @@ https://www.preppindata.com
 
 
 <h2>2022</h2>
-
 <h3>January</h3>
 <ul>
   <li><a href="https://preppindata.blogspot.com/2022/01/2022-week-1-prep-school-parental.html">Week 1 The Prep School - Parental Contact Details</a> | <a href="https://github.com/dbmurray/preppin_data_rstats_chapter/blob/main/2022/2022.Wk1%20Parental%20Contact%20Details/2022.Wk%201%20Solution.R">R Solution</a></li>
