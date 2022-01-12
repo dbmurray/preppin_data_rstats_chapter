@@ -1,3 +1,5 @@
+<h1>Preppin' Data - Rstats Solutions</h1>
+
 Repo for Preppin' Data solutions coded in R (January 2022 onwards) by Darragh Murray.
 
 Preppin' Data is a project run by:
@@ -9,7 +11,8 @@ Preppin' Data is a project run by:
 https://www.preppindata.com
 
 
-<h3>January 2022</h3>
+<h2>2022</h2>
+<h3>January</h3>
 <ul>
   <li><a href="https://preppindata.blogspot.com/2022/01/2022-week-1-prep-school-parental.html">Week 1 The Prep School - Parental Contact Details</a> | <a href="https://github.com/dbmurray/preppin_data_rstats_chapter/blob/main/2022/2022.Wk1%20Parental%20Contact%20Details/2022.Wk%201%20Solution.R">R Solution</a></li>
   </ul>
