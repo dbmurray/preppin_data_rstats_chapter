@@ -71,7 +71,7 @@ parental_contact_details <- mutate(parental_contact_details, year_adjustment = i
 parental_contact_details_output <- select(parental_contact_details, academic_year, pupils_name, parental_contact_full_name, parental_contact_email)
 
 # 6. Output data - write a new CSV file to the outputs directory.
-write.csv(parental_contact_details_output, "2022/2022.Wk1 Parental Contact Details/outputs/updated_parental_contact_details.csv")
+write.csv(parental_contact_details_output, "2022/2022.Wk1 Parental Contact Details/outputs/updated_parental_contact_details.csv", row.names=FALSE)
 
 
 
