@@ -12,7 +12,6 @@
 # INSTALL PACKAGES (if required)
 install.packages("tidyverse")
 install.packages("readr")
-install.packages("hutils")
 
 # INITIALISE LIBRARIES
 library(tidyverse)
@@ -62,7 +61,7 @@ student_grades <- student_grades %>%
   mutate(a_student_average = max(avg_student_total_points_per_grade)) %>% # get the average total points per grade for A students
   filter(grade != 'A') %>% # filter out all A grades
   filter(total_points > a_student_average) %>% # filter out those results where the total points are LESS than the a student average
-  select(c(avg_student_total_points_per_grade, total_points, grade, points, subject, Student_ID)) # select required comments. 
+  select(c(avg_student_total_points_per_grade, total_points, grade, points, subject, Student_ID)) # select required columns. 
 
   
 # 2. Output data - write a new CSV file to the outputs directory.
