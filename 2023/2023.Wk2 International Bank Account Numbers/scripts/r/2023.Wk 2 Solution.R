@@ -31,7 +31,7 @@ transactions_by_IBAN <- transactions_merged %>%
   select(`Transaction ID`,`IBAN`) # select the required columns
 
 # All the above can be simplified. Because the addition the country column, only then to remove it at the end, is
-# redundant, we can basically can cut down the code
+# redundant, we can basically can cut down the code into basically two operations
 
 transactions_by_IBAN_alternative <- transactions_merged %>%
   mutate( IBAN = str_c("GB",`Check Digits`,
