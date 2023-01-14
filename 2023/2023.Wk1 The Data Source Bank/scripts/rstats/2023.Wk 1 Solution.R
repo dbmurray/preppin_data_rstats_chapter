@@ -1,9 +1,9 @@
-# PREPPIN' DATA | 2023 | Week 1 | The Data Source Bank
+# PREPPIN' DATA | 2023 | Week 1 | The Data Source Bank | Rstats Solution
 # https://preppindata.blogspot.com/2023/01/2023-week-1-data-source-bank.html
 #
 # Solution prepared by Darragh Murray.
 # Last updated: 5 January
-#
+
 
 # INSTALL PACKAGES (if required)
 install.packages("tidyverse")
