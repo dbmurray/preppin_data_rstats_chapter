@@ -11,8 +11,8 @@ install.packages("readr")
 
 # INITIALISE LIBRARIES
 library(tidyverse)
-library(readxl) # for data import
 library(stringr) # for string manipulation
+library(readr)
 
 # IMPORT DATA
 data_source_bank <-read_csv("2023/2023.Wk1 The Data Source Bank/data/PD 2023 Wk 1 Input.csv", 
