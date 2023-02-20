@@ -26,13 +26,10 @@ data_source_bank_tidy <- data_source_bank %>%
   mutate(`Transaction Date` = months(transaction_date_time)) %>% # Change the date to month NAMES
   group_by(Bank, `Transaction Date`) %>% # To summarise values by bank and month, we need to group by first
   summarise(Value = sum(Value)) %>% # calculate the aggregate sume pe rbank and month
-  ungroup() %>% #ungroup the data
   group_by(`Transaction Date`) %>% #now group by just the transaction date/month name
   mutate(`Bank Rank per Month` = order(order(Value, decreasing=TRUE))) %>% # We create a ranking variable
-  ungroup() %>%
   group_by(Bank) %>% # to find out mean rank per bank and month, we group by bank
   mutate(`Avg Rank per Bank` = mean(`Bank Rank per Month`)) %>% # calculate the average rank
-  ungroup() %>%
   group_by(`Bank Rank per Month`) %>% # now group by the bank rank
   mutate(`Avg Transaction Value per Rank` = mean(Value)) #calculate the average transaction value by rank..and voila!
          
