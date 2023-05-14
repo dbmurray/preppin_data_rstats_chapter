@@ -32,6 +32,7 @@ Preppin' Data is a project run by:
 <h3>February</h3>
 <ul>
 <li><a href="https://preppindata.blogspot.com/2023/02/2023-week-5-dsb-ranking.html">Week 5 DSB Ranking</a> | <a href="https://github.com/dbmurray/preppin_data_rstats_chapter/blob/main/2023/2023.Wk5%20DSB%20Ranking/scripts/r/2023.Wk%205%20Solution.R">R Solution</a></li>
+ <li><a href="">Week 6 DSB Customer Ratings</a> | <a href="https://github.com/dbmurray/preppin_data_rstats_chapter/blob/main/2023/2023.Wk6%20DSB%20Ratings/scripts/r/2023.Wk%206%20Solution.R">R Solution</a></li>
 </ul>
 
 
@@ -56,5 +57,4 @@ Preppin' Data is a project run by:
 <ul>
 
 <li><a href="https://preppindata.blogspot.com/2022/02/2022-week-5-prep-school-setting-grades.html">Week 5 The Prep School - Setting Grades</a> | <a href="https://github.com/dbmurray/preppin_data_rstats_chapter/blob/main/2022/2022.Wk5%20Setting%20Grades/2022.Wk%205%20Solution.R">R Solution</a></li>
-
 </ul>
